@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="eventosCronometrados.js"></script>
+    <script src="promesasTS.js"></script>
+    <script src="promesaConCondicional.js"></script>
+    <div class="container">
+        <button onclick="activarFuncion = setTimeout(mostrarMensajeEspera,4000)" >
+            Activar turno
+        </button>
+
+        <button onclick="clearTimeout(activarFuncion)" >
+            Cancelar turno
+        </button>
+
+        <button onclick="mostrarCronometro = setInterval(mensajeFrecuente, 1000)" >
+            Activar Cronómetro
+        </button>
+
+        <button onclick="clearTimeout(mostrarCronometro)" >
+            Cancelar Cronómetro
+        </button>
+
+    </div>
+</body>
+</html>
